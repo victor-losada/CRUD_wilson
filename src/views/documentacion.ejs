@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentacion de la Api</title>
+</head>
+<body>
+    <h1>Documentacion de la Api</h1>
+    <table>
+        <thead>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+        </thead>
+        <tr>
+            <td>Nombre del end pint</td>
+            <td>Registar un nuevo usuario</td>
+        </tr>
+
+        <tr>
+            <td>URl</td>
+            <td>localhost:3000/usuario/registrar</td>
+        </tr>
+        <tr>
+            <td>Descripcion</td>
+            <td>Esta funcionalidad permite registrar un nuevo usuario en la tabla usuario de la base de datos</td>
+        </tr>
+        <tr>
+            <td>verbo HTTPS</td>
+            <td>POST</td>
+        </tr>
+        <tr>
+            <td>header</td>
+            <td>Usuario</td>
+        </tr>
+        <tr>
+            <td>peticion body</td>
+            <td>
+                json {
+                    nombre:"victor manuel"
+                    direccion:"calle 131 31"
+                    telefono: 310328923
+                    correo:"victor@hotmail.com"
+                    rol: "aprendiz"
+                }
+            </td>
+        </tr>
+        <tr>
+            <td>Respuesta json</td>
+            <td>Correcto: statu:200, json {"message":"se registro con exito"}
+                incorrecto: status:404, {"message":"no se registro con exito el usuario"}
+                Error: status:500, {"message":"error"+e.message}
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
